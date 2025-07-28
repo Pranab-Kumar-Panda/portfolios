@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranab Kumar Panda - Dynamic & Professional Portfolio</title>
+    <link href="output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-sans text-gray-900 dark:text-gray-100 transition-colors duration-700 ease-in-out relative">
+
+    <div class="particle-overlay">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <header
+        class="bg-white dark:bg-primary-900 bg-opacity-80 dark:bg-opacity-80 backdrop-filter backdrop-blur-lg shadow-xl sticky top-0 z-50 transition-all duration-500 ease-in-out">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#"
+                class="text-3xl font-extrabold text-primary-500 dark:text-accent-dark hover:text-primary-600 dark:hover:text-accent-light transition-colors duration-300 transform hover:scale-105">Pranab
+                Panda</a>
+            <div class="hidden md:flex space-x-8 items-center font-semibold text-lg">
+                <a href="#about"
+                    class="hover:text-primary-500 dark:hover:text-accent-dark transition-colors duration-300">About</a>
+                <a href="#skills"
+                    class="hover:text-primary-500 dark:hover:text-accent-dark transition-colors duration-300">Skills</a>
+                <a href="#projects"
+                    class="hover:text-primary-500 dark:hover:text-accent-dark transition-colors duration-300">Projects</a>
+                <a href="#contact"
+                    class="hover:text-primary-500 dark:hover:text-accent-dark transition-colors duration-300">Contact</a>
+                <button id="theme-toggle"
+                    class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-primary-100 dark:hover:bg-primary-800 transition-all duration-300 shadow-md">
+                    <span class="material-icons text-gray-700 dark:text-gray-200 text-xl"
+                        id="theme-toggle-icon">light_mode</span>
+                </button>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button id="theme-toggle-mobile"
+                    class="p-2 mr-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-primary-100 dark:hover:bg-primary-800 transition-all duration-300 shadow-md">
+                    <span class="material-icons text-gray-700 dark:text-gray-200 text-xl"
+                        id="theme-toggle-icon-mobile">light_mode</span>
+                </button>
+                <button id="mobile-menu-button"
+                    class="text-gray-700 dark:text-gray-200 focus:outline-none p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white dark:bg-primary-900 pb-4 shadow-inner">
+            <a href="#about"
+                class="block py-3 px-6 text-lg font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-300">About</a>
+            <a href="#skills"
+                class="block py-3 px-6 text-lg font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-300">Skills</a>
+            <a href="#projects"
+                class="block py-3 px-6 text-lg font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-300">Projects</a>
+            <a href="#contact"
+                class="block py-3 px-6 text-lg font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main class="relative z-10">
+        <section id="hero"
+            class="py-24 md:py-32 flex flex-col md:flex-row items-center justify-center min-h-screen text-center md:text-left overflow-hidden relative">
+            <div class="container mx-auto px-6 z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="md:w-1/2 mb-10 md:mb-0 animated-element fade-in-left" data-animation-delay="0">
+                    <h1
+                        class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900 dark:text-gray-100 mb-4 drop-shadow-lg">
+                        Hi, I'm <span class="text-primary-500 dark:text-accent-dark">Pranab Kumar Panda</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8 font-medium">
+                        <b>B.Tech Computer Science Student</b> | <b>Frontend Developer</b> | <b>AI Enthusiast</b>
+                    </p>
+                    <a href="#projects"
+                        class="inline-block bg-primary-500 hover:bg-primary-600 text-white font-bold py-3 px-8 rounded-full shadow-xl transform hover:scale-105 transition duration-300 ease-in-out animate-pop-out">
+                        View My Work
+                    </a>
+                </div>
+                <div class="md:w-1/2 flex justify-center md:justify-end animated-element fade-in-right"
+                    data-animation-delay="200">
+                    <img src="name.jpg" alt="Pranab Kumar Panda"
+                        class="rounded-full w-95 h-90 md:w-80 md:h-90 object-cover shadow-2xl border-4 border-primary-300 dark:border-primary-600 animated-element zoom-in"
+                        data-animation-delay="400">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 relative z-10">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-gray-900 dark:text-gray-100 mb-12 animated-element fade-in-down"
+                    data-animation-delay="0">About Me</h2>
+                <div class="glass-card p-8 md:p-12 animated-element zoom-in" data-animation-delay="200">
+                    <div class="text-lg leading-relaxed text-gray-700 dark:text-gray-300 animated-element fade-in-right"
+                        data-animation-delay="600">
+                        <p class="mb-4">
+                            Hello! I'm <b>Pranab Kumar Panda</b>, a passionate B.Tech Computer Science student deeply
+                            immersed in the world of coding and innovation. My journey began with a fascination for how
+                            things work, leading me to explore various facets of technology, from crafting intuitive
+                            user interfaces to delving into the complexities of artificial intelligence.
+                        </p>
+                        <p class="mb-4">
+                            I thrive on learning new technologies and am always eager to take on challenges that push my
+                            boundaries. My core interests lie in <b>Frontend Development</b>, creating <b>AI-Powered
+                                Solutions</b>, and meticulous <b>UI/UX Design</b>. I believe in writing clean,
+                            efficient,
+                            and maintainable code that not only functions flawlessly but also provides an exceptional
+                            user
+                            experience.
+                        </p>
+                        <p>
+                            Beyond the code, I'm constantly exploring the exciting fields of <b>Data Science</b> and
+                            envision a future where I can contribute significantly to cutting-edge technologies. My
+                            portfolio is a reflection of this journey&mdash;a blend of creativity, technical skill, and
+                            a relentless drive to build and evolve.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 relative z-10">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-gray-900 dark:text-gray-100 mb-12 animated-element fade-in-down"
+                    data-animation-delay="0">My Skills & Interests</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <div
+                        class="skill-card glass-card p-6 text-center transform hover:scale-105 transition-transform duration-300 animated-element zoom-in group">
+                        <i
+                            class="fab fa-html5 text-6xl text-orange-500 mb-4 group-hover:text-orange-600 transition-colors duration-300"></i>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">HTML5</h3>
+                    </div>
+                    <div
+                        class="skill-card glass-card p-6 text-center transform hover:scale-105 transition-transform duration-300 animated-element zoom-in group">
+                        <i
+                            class="fab fa-css3-alt text-6xl text-blue-500 mb-4 group-hover:text-blue-600 transition-colors duration-300"></i>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">CSS3</h3>
+                    </div>
+                    <div
+                        class="skill-card glass-card p-6 text-center transform hover:scale-105 transition-transform duration-300 animated-element zoom-in group">
+                        <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS"
+                            class="w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Tailwind CSS</h3>
+                    </div>
+                    <div
+                        class="skill-card glass-card p-6 text-center transform hover:scale-105 transition-transform duration-300 animated-element zoom-in group">
+                        <i
+                            class="fab fa-js-square text-6xl text-yellow-500 mb-4 group-hover:text-yellow-600 transition-colors duration-300"></i>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">JavaScript</h3>
+                    </div>
+                    <div
+                        class="skill-card glass-card p-6 text-center transform hover:scale-105 transition-transform duration-300 animated-element zoom-in group">
+                        <i
+                            class="fab fa-java text-6xl text-red-500 mb-4 group-hover:text-red-600 transition-colors duration-300"></i>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Java</h3>
+                    </div>
+                    <div
+                        class="skill-card glass-card p-6 text-center transform hover:scale-105 transition-transform duration-300 animated-element zoom-in group">
+                        <span
+                            class="material-icons text-6xl text-blue-700 mb-4 group-hover:text-blue-800 transition-colors duration-300">code</span>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">C Language</h3>
+                    </div>
+                    <div
+                        class="skill-card glass-card p-6 text-center transform hover:scale-105 transition-transform duration-300 animated-element zoom-in group">
+                        <span
+                            class="material-icons text-6xl text-purple-500 mb-4 group-hover:text-purple-600 transition-colors duration-300">design_services</span>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">UI/UX Design</h3>
+                    </div>
+                    <div
+                        class="skill-card glass-card p-6 text-center transform hover:scale-105 transition-transform duration-300 animated-element zoom-in group">
+                        <span
+                            class="material-icons text-6xl text-green-500 mb-4 group-hover:text-green-600 transition-colors duration-300">psychology</span>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">AI Solutions</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 relative z-10">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-gray-900 dark:text-gray-100 mb-12 animated-element fade-in-down"
+                    data-animation-delay="0">My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="project-card glass-card rounded-xl overflow-hidden animated-element zoom-in group">
+                        <img src="typerracerpro.png" alt="TypeRacerPro"
+                            class="w-full h-56 object-cover project-image-hover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-3">TypeRacerPro</h3>
+                            <p class="text-gray-700 dark:text-gray-300 mb-5 leading-relaxed">
+                                A fun and competitive typing speed test game designed using <b>HTML</b>, <b>CSS</b>, and
+                                <b>JavaScript</b>. It features a dynamic timer, real-time input feedback, accuracy
+                                calculation, and a modern responsive design for all screen sizes.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-5">
+                                <span
+                                    class="bg-primary-200 text-primary-800 text-sm font-semibold px-3 py-1 rounded-full dark:bg-primary-700 dark:text-primary-300">JavaScript</span>
+                                <span
+                                    class="bg-primary-200 text-primary-800 text-sm font-semibold px-3 py-1 rounded-full dark:bg-primary-700 dark:text-primary-300">HTML</span>
+                                <span
+                                    class="bg-primary-200 text-primary-800 text-sm font-semibold px-3 py-1 rounded-full dark:bg-primary-700 dark:text-primary-300">Game
+                                    UI</span>
+                            </div>
+                            <div class="flex justify-end space-x-4">
+                                <a href="https://typerracerpro.netlify.app/" target="_blank"
+                                    class="text-primary-600 dark:text-accent-dark hover:text-primary-800 dark:hover:text-accent-light font-medium flex items-center transition-colors duration-300">
+                                    <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card glass-card rounded-xl overflow-hidden animated-element zoom-in group">
+                        <img src="calculator.png" alt="Login Page UI"
+                            class="w-full h-56 object-cover project-image-hover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-3">Calculator Website
+                            </h3>
+                            <p class="text-gray-700 dark:text-gray-300 mb-5 leading-relaxed">
+                                A sleek and responsive user interface for a Calculator, demonstrating modern design
+                                principles and clean, fully functionable <b>HTML/CSS/js</b>.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-5">
+                                <span
+                                    class="bg-primary-200 text-primary-800 text-sm font-semibold px-3 py-1 rounded-full dark:bg-primary-700 dark:text-primary-300">HTML</span>
+                                <span
+                                    class="bg-primary-200 text-primary-800 text-sm font-semibold px-3 py-1 rounded-full dark:bg-primary-700 dark:text-primary-300">CSS</span>
+                                <span
+                                    class="bg-primary-200 text-primary-800 text-sm font-semibold px-3 py-1 rounded-full dark:bg-primary-700 dark:text-primary-300">JS</span>
+                            </div>
+                            <div class="flex justify-end space-x-4">
+                                <a href="https://pranab-kumar-panda.github.io/Calculator-/" target="_blank"
+                                    class="text-primary-600 dark:text-accent-dark hover:text-primary-800 dark:hover:text-accent-light font-medium flex items-center transition-colors duration-300">
+                                    <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-card rounded-xl overflow-hidden animated-element zoom-in group">
+                        <img src="drawing.png" alt="Drawing Board App"
+                            class="w-full h-56 object-cover project-image-hover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-3">Drawing Board App
+                            </h3>
+                            <p class="text-gray-700 dark:text-gray-300 mb-5 leading-relaxed">
+                                An interactive web-based drawing application built with <b>JavaScript</b>, allowing
+                                users to draw and customize colors.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-5">
+                                <span
+                                    class="bg-primary-200 text-primary-800 text-sm font-semibold px-3 py-1 rounded-full dark:bg-primary-700 dark:text-primary-300">JavaScript</span>
+                                <span
+                                    class="bg-primary-200 text-primary-800 text-sm font-semibold px-3 py-1 rounded-full dark:bg-primary-700 dark:text-primary-300">HTML
+                                    Canvas</span>
+                                <span
+                                    class="bg-primary-200 text-primary-800 text-sm font-semibold px-3 py-1 rounded-full dark:bg-primary-700 dark:text-primary-300">Frontend
+                                    Dev</span>
+                            </div>
+                            <div class="flex justify-end space-x-4">
+                                <a href="https://pranab-kumar-panda.github.io/Drawing-webpage/" target="_blank"
+                                    class="text-primary-600 dark:text-accent-dark hover:text-primary-800 dark:hover:text-accent-light font-medium flex items-center transition-colors duration-300">
+                                    <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-card rounded-xl overflow-hidden animated-element zoom-in group">
+                        <img src="gym.png" alt="Gym Website" class="w-full h-56 object-cover project-image-hover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-3">Gym Landing Page
+                            </h3>
+                            <p class="text-gray-700 dark:text-gray-300 mb-5 leading-relaxed">
+                                A modern and visually striking gym website created with <b>HTML</b>, <b>CSS</b>, and
+                                <b>Tailwind CSS</b>. It includes sections for services, trainers, pricing, and contact.
+                                Optimized for performance and mobile responsiveness.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-5">
+                                <span
+                                    class="bg-primary-200 text-primary-800 text-sm font-semibold px-3 py-1 rounded-full dark:bg-primary-700 dark:text-primary-300">Tailwind
+                                    CSS</span>
+                                <span
+                                    class="bg-primary-200 text-primary-800 text-sm font-semibold px-3 py-1 rounded-full dark:bg-primary-700 dark:text-primary-300">HTML</span>
+                                <span
+                                    class="bg-primary-200 text-primary-800 text-sm font-semibold px-3 py-1 rounded-full dark:bg-primary-700 dark:text-primary-300">Fitness
+                                    UI</span>
+                            </div>
+                            <div class="flex justify-end space-x-4">
+                                <a href="https://pranab-kumar-panda.github.io/GYM/" target="_blank"
+                                    class="text-primary-600 dark:text-accent-dark hover:text-primary-800 dark:hover:text-accent-light font-medium flex items-center transition-colors duration-300">
+                                    <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 relative z-10">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-gray-900 dark:text-gray-100 mb-12 animated-element fade-in-down"
+                    data-animation-delay="0">Get in Touch</h2>
+                <div class="max-w-xl mx-auto glass-card p-8 md:p-10 animated-element zoom-in"
+                    data-animation-delay="200">
+                    <form action="YOUR_FORM_SUBMISSION_ENDPOINT" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name"
+                                class="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-1">Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-primary-700 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 transition-all duration-300">
+                        </div>
+                        <div>
+                            <label for="email"
+                                class="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-1">Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-primary-700 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 transition-all duration-300">
+                        </div>
+                        <div>
+                            <label for="message"
+                                class="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="6" required
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-primary-700 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 transition-all duration-300"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit"
+                                class="w-full inline-flex justify-center py-3 px-6 border border-transparent shadow-lg text-lg font-semibold rounded-md text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transform hover:scale-105 transition duration-300 ease-in-out">
+                                Send Message <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <p class="text-center text-sm text-gray-500 dark:text-gray-400 mt-6">
+                        Alternatively, you can reach me at <a href="mailto:your.email@example.com"
+                            class="text-primary-600 dark:text-accent-dark hover:underline font-medium">pranabkumarpanda20@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer
+        class="bg-white dark:bg-primary-900 bg-opacity-80 dark:bg-opacity-80 backdrop-filter backdrop-blur-lg py-10 transition-colors duration-700 ease-in-out relative z-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-700 dark:text-gray-300 mb-6 text-lg">&copy; 2025 Pranab Kumar Panda. All rights
+                reserved.</p>
+            <div class="flex justify-center space-x-8 animated-element fade-in-up" data-animation-delay="100">
+                <a href="https://www.linkedin.com/in/pranab-kumar-panda-3a250124b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"
+                    class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-accent-dark text-3xl transform hover:scale-110 transition-transform duration-300 social-icon-glow">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Pranab-Kumar-Panda" target="_blank"
+                    class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-accent-dark text-3xl transform hover:scale-110 transition-transform duration-300 social-icon-glow">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
