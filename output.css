@@ -1766,3 +1766,11 @@ body {
     line-height: 1;
   }
 }
+
+nav,header {
+  height: 70px;
+}
+
+.py-4 {
+  padding-top: 0.5rem;
+}
